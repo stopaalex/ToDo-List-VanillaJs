@@ -1,4 +1,146 @@
 body {
+  width: 100vw; height: 100vh;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  width: 100%; height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paper {
+  width: 50%; height: 90%;
+  min-width: 500px; min-height: 500px;
+  background: #f4f4e6;
+  border: 1px solid #e8e8da;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.paper .header {
+  width: calc(90% - 30px);
+  margin-left: 5%;
+  border-bottom: 1px solid red;
+  padding: 15px;
+  padding-top: 20px;
+  font-size: 1.2em;
+}
+
+.paper .list {
+  width: 90%;
+  height: calc(100% - 120px);
+  margin-left: 5%;
+  /* background: skyblue; */
+  overflow-y: auto;
+}
+
+.paper .newItem {
+  width: 90%;
+  margin-left: 5%;
+  padding: 15px 0;
+  display: flex;
+}
+
+.newItem input {
+  height: 25px;
+  border: none;
+  background: none;
+  border-bottom: 1px solid;
+  outline: none;
+  width: calc(100% - 60px);
+  margin-right: 30px;
+  font-size: 1.1em;
+}
+
+.newItem div {
+  background:  rgba(0,0,0,0.05);
+  width: 30px;
+  height: 30px;
+  display:  flex;
+  justify-content:  center;
+  align-items:  center;
+  border-radius:  2px;
+  cursor: pointer;
+}
+
+.newItem div:hover {
+  background: rgba(0,0,0,0.1)
+}
+
+.list .item {
+  display:  flex;
+  height: 30px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #d6e6f3;
+  padding: 5px 0px;
+}
+
+.list .item > div {
+  display: flex;
+  align-items: center
+}
+/***** CHECKBOX *****/
+.item .check {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.check input {
+  opacity: 0.5;
+  position:  absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.check div {
+  width: 75%;
+  height: 75%;
+  background: rgba(0,0,0,0.05);
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.check input:hover + div {
+  background: rgba(0,0,0,0.1);
+}
+
+/***** TEXT *****/
+.item .text {
+  width: calc(100% - 60px);
+  padding-left: 5px;
+}
+
+/***** DELETE *****/
+.item .remove {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.remove-btn {
+  background: rgba(0,0,0,0.05);
+  width: 75%;
+  height: 75%;
+  border-radius:  2px;
+  display:  flex;
+  justify-content:  center;
+  align-items:  center;
+  /* color: #666666; */
+  cursor: pointer;
+}
+.remove-btn:hover {
+  background: rgba(0,0,0,0.1);
 }

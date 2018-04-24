@@ -4,12 +4,49 @@
 <head>
   <meta charset="UTF-8">
   <title>Todo List Vanilla JS Pracitce</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"
+        href="style.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <div>Hello, World!</div>
+  <div class="wrapper">
+    <div class="paper">
+      <div class="header">Vanilla JS ToDo Practice App</div>
+      <div class="list" id="list">
+
+        <!-- ITEMS -->
+        <div class="item"
+             id="create_todo_app">
+          <div class="check">
+            <input type="checkbox">
+            <div>
+              <i class="fa"></i>
+            </div>
+          </div>
+          <div class="text">
+            <div>Create ToDo App</div>
+          </div>
+          <div class="remove">
+            <div class="remove-btn">
+              <i class="fa fa-trash"></i>
+            </div>
+          </div>
+        </div>
+        
+        <!-- ITEMS -->
+
+      </div>
+      <div class="newItem">
+        <input type="text">
+        <div>
+          <i class="fa fa-plus"></i>
+        </div>
+
+      </div>
+    </div>
+  </div>
   <script src="scripts.js"></script>
 </body>
 
